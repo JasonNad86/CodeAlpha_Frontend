@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Portfolio_Website.css" />
+    <script src="https://kit.fontawesome.com/a57e2b17b6.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="title-name"><span>J</span>ason.</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Computer Science Graduate</p>
+          <h1>Hi, I'm <span>Jason</span><br> Nader From Lebanon</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/about-me.jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello! I'm Jason, a passionate Computer Science graduate with a strong foundation in software development and a keen interest in sustainable technology solutions. My academic journey has equipped me with a diverse skill set, from developing web applications to exploring database management. <br><br>During my time as a student, I had the opportunity to work on several innovative projects. One notable project involved the digitalization of cultural heritage in the Chouf region of Lebanon, where I collaborated with Darmstadt University of Germany. This experience allowed me to harness tools like React Native, Node.js, MySQL, Blender, and Metashape, fostering my interest in 3D rendering and virtual environment creation.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links"  onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                <li><span>Web Developer</span><br>Web app Development</li>
+                <li><span>App Development</span><br>Building Android/IOS apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>July 2023 - August 2023</span><br>Web Development Internship at MEA Lebanon <li>Spearheaded front-end web development, mastering HTML, CSS, and JavaScript to create responsive and interactive web pages.</li><li>Designed and maintained database systems using PHP and MySQL, implementing secure login functionalities.</li><li>Analyzed and interpreted business data with QlikView and Excel Power BI, contributing to data-driven
+                  decision-making.</li></li>
+                <li><span>October 2023 - June 2024</span><br>Created a virtual reality app with my University team that serves the purpose of cultural arab heritage using React Native, Node.js, MySQL, Blender (3D rendering), Metashape (3D modeling)</li>
+                <li><span>August 2023 - December 2023</span><br>Collaborated with my team to develop a nutrition-focused mobile application to promote healthy living using Android Studio, Java, and Firebase</li>
+                <li><span>February 2023 - July 2023</span><br>Developed a university library booking application with my team to streamline seating arrangements and enhance the experience for students and visitors using Flutter, Dart, and Firebase</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>August 2021 - June 2024</span><br>B.S in Computer Science from the American University of Beirut</li>
+                <li><span>Relevant Coursework</span><br>Algorithms & Data Structure, Programming Languages, Computer Organization and Design, Database Systems, Software Engineering, Machine Learning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Web development is my passion, combining creativity and technical expertise to build engaging, user-friendly websites. With a solid foundation in HTML, CSS, JavaScript, and backend technologies, I enjoy crafting seamless digital experiences that meet both aesthetic and functional needs.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>UI/UX design fascinates me as it merges creativity with user-centric thinking to create intuitive and visually appealing digital experiences. I enjoy designing interfaces that are not only aesthetically pleasing but also enhance user satisfaction and accessibility.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p> App design for iOS and Android excites me as it blends creativity and functionality to create seamless, user-friendly mobile experiences. I enjoy crafting intuitive and visually appealing interfaces that enhance user engagement and accessibility across both platforms.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work1.png">
+             <div class="layer">
+              <h3>Cultural Heritage App</h3>
+              <p>Created a virtual reality app with my University team that serves the purpose of cultural arab heritage using React Native, Node.js, MySQL, Blender (3D rendering), Metashape (3D modeling)
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+             </div>
+          </div>
+          <div class="work">
+            <img src="Images/work2.png">
+            <div class="layer">
+              <h3>Nurtipal App</h3>
+              <p>Collaborated with my University team to develop a nutrition-focused mobile application to promote healthy living using Android Studio, Java, and Firebase</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+             </div>
+          </div>
+          <div class="work">
+            <img src="Images/work3.jpeg">
+            <div class="layer">
+              <h3>Library Booking App</h3>
+              <p>Developed a university library booking application with my team to streamline seating arrangements and enhance the experience for students and visitors using Flutter, Dart, and Firebase</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+             </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i>jasonnader98@gmail.com</p>
+            <p> <i class="fa-solid fa-square-phone"></i>+961 79300809</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/jason.nader.77/about/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/jason_nade89646"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/jasonn86/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/jason-nader/?originalSubdomain=lb"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/JasonNad86/CodeAlpha_Frontend"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Images/Jason_Nader_CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy Jason</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbymFW36ZPdJRaY3nv1uawENtMk0NHq3BCxEuzFChpGoF98S9b_w0X8KLVSoB5Hs2HNtZg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
